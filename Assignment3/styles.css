@@ -12,7 +12,7 @@ tab {
 
 .italics {
     font-style: italic;
-    color: gray;
+    color: rgb(147, 147, 147);
 }
 
 .selected {
