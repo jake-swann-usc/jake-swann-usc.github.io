@@ -7,10 +7,16 @@ tab {
     margin-left: 25%;
     margin-right: 25%;
     border-style: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .italics {
     font-style: italic;
+    color: gray;
+}
+
+.selected {
+    color: black;
 }
 
 .photos {
