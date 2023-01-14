@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.photos {
+    width: 30%;
+    height: auto;
+}
