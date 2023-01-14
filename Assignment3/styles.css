@@ -2,6 +2,10 @@ tab {
     margin-left: 3%;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+  }
+
 .center {
     text-align: center;
     margin-left: 25%;
