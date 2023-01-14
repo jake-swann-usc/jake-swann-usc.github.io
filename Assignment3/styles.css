@@ -4,6 +4,7 @@ tab {
 
 a:link, a:visited {
     text-decoration: none;
+    color: rgb(147, 147, 147);
   }
 
 .center {
