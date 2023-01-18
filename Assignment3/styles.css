@@ -1,6 +1,9 @@
 .container {
     white-space: nowrap;
-    margin-top: 35px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    width: 743px;
+    margin: auto;
 }
 
 .center {
@@ -8,9 +11,8 @@
     border-style: solid;
     border-width: thin;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 650px;
+    width: 643px;
     margin: auto;
-    
 }
 
 h1 {
@@ -27,18 +29,26 @@ h1 {
 .italics {
     font-size: small;
     font-style: italic;
-    color: rgb(147, 147, 147);
+    color: rgb(115, 115, 115);
     margin-top: 10px;
     padding-bottom: 10px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(147, 147, 147);
+    color: rgb(115, 115, 115);
   }
 
 tab {
     margin-left: 3%;
+}
+
+.nature {
+    margin-top: 50px;
+    height: 38px;
+    width: 743px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
 }
 
 .main {
@@ -47,7 +57,7 @@ tab {
 
 .row {
     margin: auto;
-    width: 744px;
+    width: 743px;
 }
 
 .photos {
@@ -57,5 +67,28 @@ tab {
     padding: 1.5px;
 }
 
+.footer {
+    width: 200px;
+    margin: auto;
+    padding-top: 25px;
+}
 
+.copy {
+    color:rgb(115, 115, 115);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size:x-small;
+    text-align: center;
+}
 
+.social {
+    width: 115px;
+    margin: auto;
+    padding: 10px;
+}
+
+.logos {
+    width: 20px;
+    height: auto;
+    padding: 7px;
+}
