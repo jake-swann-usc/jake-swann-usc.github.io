@@ -7,12 +7,27 @@ body {
 }
 
 .search-box {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: white;
+    margin-top: 7.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .title {
-    
+    color: rgb(196, 196, 196);
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    width: 96%;
+    height: .3px;
+    background-color:rgb(196, 196, 196);
+    margin-top: 18px;
 }
