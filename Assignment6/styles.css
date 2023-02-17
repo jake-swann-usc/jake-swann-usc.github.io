@@ -1,3 +1,18 @@
 body {
-    background-image:image-set(./background.jpg);
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.search-box {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+.title {
+    
 }
