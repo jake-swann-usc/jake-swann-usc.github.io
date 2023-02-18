@@ -16,7 +16,7 @@ body {
 }
 
 .title {
-    color: rgb(196, 196, 196);
+    color: rgb(225, 225, 225);
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -28,6 +28,58 @@ body {
 hr {
     width: 96%;
     height: .3px;
-    background-color:rgb(196, 196, 196);
+    background-color:rgb(225, 225, 225);
     margin-top: 18px;
+}
+
+label {
+    color:rgb(172, 211, 226);
+    font-size: 20px;
+    margin: 25px;
+}
+
+#whiteText {
+    color:rgba(225, 225, 225, 0.658);
+}
+
+input {
+    border-radius: 9px;
+    height: 35px;
+    background: transparent;
+    margin-left: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(225, 225, 225, 0.726);
+    border-width: .2px;
+    border-style: solid;
+    color: white;
+}
+
+#key {
+    width: 95%;
+}
+
+#location {
+    width: 95%;
+}
+
+#dist {
+    margin-right: 780px;
+}
+
+#distLabel {
+    margin-right: 800px;
+}
+
+select {
+    border-radius: 9px;
+    height: 39px;
+    background: transparent;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    border-color: rgba(225, 225, 225, 0.726);
+    border-width: .2px;
+    border-style: solid;
+    color: white;
+    font-size: 17px;    
 }

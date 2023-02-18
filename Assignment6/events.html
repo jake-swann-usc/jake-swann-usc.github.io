@@ -12,10 +12,11 @@
             <form>
                 <label for="key">Keyword</label><br>
                 <input type="text" id="key" name="key" required><br>
-                <label for="dist">Distance (miles)</label>
+                <label for="dist" id="distLabel">Distance (miles)</label>
                 <label for="cat">Category</label><br>
                 <input type="number" id="dist" name="dist" placeholder="10">
                 <select id="cat" name="cat" required>
+                    <option value="default">Default</option>
                     <option value="music">Music</option>
                     <option value="sports">Sports</option>
                     <option value="arts">Arts</option>
@@ -24,10 +25,10 @@
                     <option value="misc">Miscellaneous</option>
                 </select><br>
                 <label for="location">Location</label>
-                <input type="checkbox" id="autoLocate" name="autoLocate">Auto-Detect Location<br>
+                <input type="checkbox" id="autoLocate" name="autoLocate"><label id="whiteText">Auto-Detect Location</label><br>
                 <input type="text" id="location" name="location" required><br>
+                <button type="button">Search</button>
                 <button type="button">Clear</button>
-                <button type="button">Submit</button>
 
             </form>
         </div>
