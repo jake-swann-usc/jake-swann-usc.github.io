@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <title>Events Search</title>
     <link href="styles.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
 </head>
@@ -27,7 +28,8 @@
                     <option value="misc">Miscellaneous</option>
                 </select><br>
                 <label for="location">Location</label>
-                <input type="checkbox" id="autoLocate" name="autoLocate"><label id="whiteText">Auto-Detect Location</label><br>
+                <input type="checkbox" id="autoLocate" name="autoLocate">
+                <label id="whiteText">Auto-Detect Location</label><br>
                 <input type="text" id="location" name="location" required><br>
                 <input type="submit" id="searchBtn" value="SEARCH">
                 <input type="reset" id="clearBtn" value="CLEAR">
@@ -46,6 +48,9 @@
                 <th class="genreR">Genre</th>
                 <th class="venueR">Venue</th>
             </tr>
+
+            <!-- search results go here-->
+
         </table>
     </div>
     <div class="noResults">
