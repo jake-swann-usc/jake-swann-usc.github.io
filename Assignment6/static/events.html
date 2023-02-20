@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
 </head>
@@ -10,12 +11,12 @@
         </div>
         <hr />
         <div>
-            <form>
+            <form id="form">
                 <label for="key">Keyword</label><br>
                 <input type="text" id="key" name="key" required><br>
                 <label for="dist" id="distLabel">Distance (miles)</label>
-                <label for="cat">Category</label><br>
-                <input type="number" id="dist" name="dist" placeholder="10">
+                <label for="cat" id="catLabel">Category</label><br>
+                <input type="number" id="dist" name="dist" placeholder="10" min="0">
                 <select id="cat" name="cat" required>
                     <option value="default">Default</option>
                     <option value="music">Music</option>
@@ -28,12 +29,27 @@
                 <label for="location">Location</label>
                 <input type="checkbox" id="autoLocate" name="autoLocate"><label id="whiteText">Auto-Detect Location</label><br>
                 <input type="text" id="location" name="location" required><br>
-                <button type="button">Search</button>
-                <button type="button">Clear</button>
+                <input type="submit" id="searchBtn" value="SEARCH">
+                <input type="reset" id="clearBtn" value="CLEAR">
 
             </form>
         </div>
 
+    </div>
+
+    <div>
+        <table class="results">
+            <tr>
+                <th class="dateR">Date</th>
+                <th class="iconR">Icon</th>
+                <th class="eventR">Event</th>
+                <th class="genreR">Genre</th>
+                <th class="venueR">Venue</th>
+            </tr>
+        </table>
+    </div>
+    <div class="noResults">
+        <p>No Records found</p>
     </div>
 
 </body>
