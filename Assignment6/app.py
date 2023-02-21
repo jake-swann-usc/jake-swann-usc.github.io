@@ -1,10 +1,10 @@
 from flask import Flask
-from flask import jsonify
+import requests
 import json
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET"])
-def hello():
-    return "Hello World!\n"
+@app.route("/static/events.html", methods=["GET"])
+
+
 

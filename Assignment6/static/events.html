@@ -13,10 +13,10 @@
         <hr />
         <div>
             <form id="form">
-                <label for="key">Keyword</label><br>
+                <label for="key">Keyword<asterisk>*</asterisk></label><br>
                 <input type="text" id="key" name="key" required><br>
                 <label for="dist" id="distLabel">Distance (miles)</label>
-                <label for="cat" id="catLabel">Category</label><br>
+                <label for="cat" id="catLabel">Category<asterisk>*</asterisk></label><br>
                 <input type="number" id="dist" name="dist" placeholder="10" min="0">
                 <select id="cat" name="cat" required>
                     <option value="default">Default</option>
@@ -27,12 +27,12 @@
                     <option value="film">Film</option>
                     <option value="misc">Miscellaneous</option>
                 </select><br>
-                <label for="location">Location</label>
-                <input type="checkbox" id="autoLocate" name="autoLocate">
-                <label id="whiteText">Auto-Detect Location</label><br>
-                <input type="text" id="location" name="location" required><br>
-                <input type="submit" id="searchBtn" value="SEARCH">
-                <input type="reset" id="clearBtn" value="CLEAR">
+                <label for="location">Location<asterisk>*</asterisk></label>
+                <input type="checkbox" id="autoLocate" name="autoLocate" onclick="checkboxEvent()">
+                <label for="autoLocate" id="whiteText">Auto-Detect Location</label><br>
+                <input type="text" id="location" name="location"><br>
+                <input type="submit" id="searchBtn" value="SEARCH" onclick="validateForm()">
+                <input type="reset" id="clearBtn" value="CLEAR" onclick="resetForm()">
 
             </form>
         </div>

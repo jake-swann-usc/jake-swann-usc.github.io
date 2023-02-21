@@ -45,6 +45,10 @@ label {
     color:rgba(225, 225, 225, 0.658);
 }
 
+asterisk {
+    color: rgb(255, 0, 0);
+}
+
 input[type="text"], input[type="number"] {
     border-radius: 9px;
     height: 35px;
@@ -76,6 +80,10 @@ input[type="checkbox"] {
 
 #autoLocate {
     margin-left: 5%;
+}
+
+label[for="autoLocate"] {
+    margin-left: 0px;
 }
 
 #dist {
