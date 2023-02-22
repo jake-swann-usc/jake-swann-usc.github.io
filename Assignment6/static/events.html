@@ -30,16 +30,16 @@
                 <label for="location">Location<asterisk>*</asterisk></label>
                 <input type="checkbox" id="autoLocate" name="autoLocate" onclick="checkboxEvent()">
                 <label for="autoLocate" id="whiteText">Auto-Detect Location</label><br>
-                <input type="text" id="location" name="location"><br>
+                <input type="text" id="location" name="location" required><br>
                 <input type="submit" id="searchBtn" value="SEARCH" onclick="validateForm()">
-                <input type="reset" id="clearBtn" value="CLEAR" onclick="resetForm()">
+                <input type="button" id="clearBtn" value="CLEAR" onclick="resetForm()">
 
             </form>
         </div>
 
     </div>
 
-    <div>
+    <div id="resultsFound">
         <table class="results">
             <tr>
                 <th class="dateR">Date</th>
@@ -53,7 +53,7 @@
 
         </table>
     </div>
-    <div class="noResults">
+    <div id="noResults">
         <p>No Records found</p>
     </div>
 
