@@ -1,7 +1,7 @@
 let searchBtn = document.getElementById("searchBtn");
 let clearBtn = document.getElementById("clearBtn");
 
-function validateForm(){
+function submitForm(){
 
 }
 
@@ -10,12 +10,17 @@ function checkboxEvent(){
     var location = document.getElementById("location");
 
     if(checkbox.checked){
+        var ip = fetch("https://ipinfo.io/json?token=d7637bfe3b1b96");
+        console.log(ip);
+
         location.disabled = true;
         location.value = "";
         location.required = false;
+        location.style.display = "none";
     } else {
         location.disabled = false;
         location.required = true;
+        location.style.display = "block";
     }
 }
 
