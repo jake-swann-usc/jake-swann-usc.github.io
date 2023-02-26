@@ -148,9 +148,14 @@ select {
     padding-top: 1px;
     padding-bottom: 8px;
     margin-bottom: 2%;
+    display: none;
 }
 
-.results {
+#resultsFound {
+    display: none;
+}
+
+#results {
     width: 80%;
     height: auto;
     margin-left: 10%;
@@ -190,4 +195,15 @@ th {
 
 .venueR {
     width: 20%; 
+}
+
+.result {
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

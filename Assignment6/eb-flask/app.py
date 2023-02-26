@@ -1,5 +1,4 @@
-from flask import Flask, request
-from flask import jsonify
+from flask import Flask, request, jsonify, Response
 import requests
 import json
 
@@ -14,19 +13,20 @@ app = Flask(__name__)
 def home():
     return app.send_static_file("events.html")
 
-@app.route("/?key=<key>&dist=<dist>&cat=<cat>&loc=<loc>")
+@app.route("/search", methods=['GET'])
 def results():
     key = request.args.get('key')
     dist = request.args.get('dist')
     cat = request.args.get('cat')
-    loc = request.args.get('loc')
+    loc = request.args.get('location')
 
     url = f'https://app.ticketmaster.com/discovery/v2/events.json?keyword={key}&geoPoint={loc}&radius={dist}&unit=miles&segmentId={cat}&apikey=aCWLPVCmdiIXGGhqklGGswfAP32Knqsu'
 
     response = requests.get(url)
+    #response.headers.add('Access-Control-Allow-Origin', '*')
 
     if response.status_code == 200:
-        return response.json
+        return response.text
     else:
         return 'Response Error'
 

@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>Events Search</title>
     <link rel="stylesheet" href="/static/styles.css"/>
-    <script src="/static/script.js" defer></script>
+    <script type="module" src="/static/script.js" defer></script>
 </head>
 <body>
     <div class="search-box">
@@ -28,11 +28,11 @@
                     <option value="misc">Miscellaneous</option>
                 </select><br>
                 <label for="location">Location<asterisk>*</asterisk></label>
-                <input type="checkbox" id="autoLocate" name="autoLocate" onclick="checkboxEvent()">
+                <input type="checkbox" id="autoLocate" name="autoLocate">
                 <label for="autoLocate" id="whiteText">Auto-Detect Location</label><br>
                 <input type="text" id="location" name="location" required><br>
-                <input type="submit" id="searchBtn" value="SEARCH" onclick="submitForm()">
-                <input type="button" id="clearBtn" value="CLEAR" onclick="resetForm()">
+                <input type="button" id="searchBtn" value="SEARCH">
+                <input type="button" id="clearBtn" value="CLEAR">
 
             </form>
         </div>
@@ -40,7 +40,7 @@
     </div>
 
     <div id="resultsFound">
-        <table class="results">
+        <table id="results">
             <tr>
                 <th class="dateR">Date</th>
                 <th class="iconR">Icon</th>
