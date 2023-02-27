@@ -19,8 +19,9 @@ def results():
     dist = request.args.get('dist')
     cat = request.args.get('cat')
     loc = request.args.get('location')
+    sort = request.args.get('sort')
 
-    url = f'https://app.ticketmaster.com/discovery/v2/events.json?keyword={key}&geoPoint={loc}&radius={dist}&unit=miles&segmentId={cat}&apikey=aCWLPVCmdiIXGGhqklGGswfAP32Knqsu'
+    url = f'https://app.ticketmaster.com/discovery/v2/events.json?keyword={key}&geoPoint={loc}&radius={dist}&unit=miles&segmentId={cat}&sort={sort}&apikey=aCWLPVCmdiIXGGhqklGGswfAP32Knqsu'
 
     response = requests.get(url)
     #response.headers.add('Access-Control-Allow-Origin', '*')

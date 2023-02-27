@@ -12,7 +12,7 @@
         </div>
         <hr />
         <div>
-            <form id="form">
+            <form id="form" action="/search">
                 <label for="key">Keyword<asterisk>*</asterisk></label><br>
                 <input type="text" id="key" name="key" required><br>
                 <label for="dist" id="distLabel">Distance (miles)</label>
@@ -31,7 +31,7 @@
                 <input type="checkbox" id="autoLocate" name="autoLocate">
                 <label for="autoLocate" id="whiteText">Auto-Detect Location</label><br>
                 <input type="text" id="location" name="location" required><br>
-                <input type="button" id="searchBtn" value="SEARCH">
+                <input type="submit" id="searchBtn" value="SEARCH">
                 <input type="button" id="clearBtn" value="CLEAR">
 
             </form>
@@ -42,11 +42,11 @@
     <div id="resultsFound">
         <table id="results">
             <tr>
-                <th class="dateR">Date</th>
-                <th class="iconR">Icon</th>
-                <th class="eventR">Event</th>
-                <th class="genreR">Genre</th>
-                <th class="venueR">Venue</th>
+                <th class="dateR" id="dateID">Date</th>
+                <th class="iconR" id="iconID">Icon</th>
+                <th class="eventR" id="eventID">Event</th>
+                <th class="genreR" id="genreID">Genre</th>
+                <th class="venueR" id="venueID">Venue</th>
             </tr>
 
             <!-- search results go here-->
@@ -55,6 +55,39 @@
     </div>
     <div id="noResults">
         <p>No Records found</p>
+    </div>
+
+    <div id="eventDetails">
+        <div id="eventName"></div>
+        <div id="details">
+            <div id="textDetails">
+                <div id="eventDate"></div>
+                <div id="eventArtist"></div>
+                <div id="eventVenue"></div>
+                <div id="eventGenre"></div>
+                <div id="eventPrice"></div>
+                <div id="eventStatus"></div>
+                <div id="eventLink"></div>
+            </div>
+            <div id="seatMap"></div>
+        </div>
+
+    </div>
+
+    <div id="showVenueDetails"><p>Show Venue Details</p><p>V</p></div>
+
+    <div id="venueDetails">
+        <div id="venueDetailsInner">
+            <div id="venueName"></div>
+            <div id="venueAddressBlock">
+                <div id="venueAddress"></div>
+                <div id="venueCity"></div>
+                <div id="postalCode"></div>
+                <div id="mapsLink"></div>
+            </div>
+            <div id="moreEvents"></div>
+        </div>
+
     </div>
 
 </body>

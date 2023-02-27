@@ -26,6 +26,11 @@ body {
     margin-bottom: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(83, 170, 213);
+}
+
 hr {
     width: 95%;
     height: .3px;
@@ -125,6 +130,7 @@ select {
     font-weight: bold;
     color: azure;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 #clearBtn {
@@ -136,6 +142,7 @@ select {
     font-weight: bold;
     color: azure;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 #noResults {
@@ -206,4 +213,217 @@ th {
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#eventID, #genreID, #venueID{
+    cursor: pointer;
+}
+
+#eventDetails {
+    display: none;
+    margin-left: 20%;
+    margin-right: 20%;;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#showVenueDetails {
+    display: none;
+    color: rgba(225, 225, 225, 0.726);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#venueDetails {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: hidden;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#eventName {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(225, 225, 225);
+}
+
+#details {
+    display: block;
+}
+
+#textDetails {
+    width: 40%;
+    float: left;
+    margin-left: 40px;
+}
+
+#eventDate {
+    display: none;
+}
+
+#eventArtist {
+    display: none;
+}
+
+#eventVenue {
+    display: none;
+}
+
+#eventGenre {
+    display: none;
+}
+
+#eventPrice {
+    display: none;
+}
+
+#eventStatus {
+    display: none;
+}
+
+#eventLink {
+    display: none;
+}
+
+.ticketLink {
+    text-decoration: none;
+    color: rgb(100, 203, 255);
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#seatMap {
+    width: 50%;
+    float: right;
+}
+
+.eHead {
+    color:rgb(165, 255, 225);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.eDetail {
+    color:rgb(225, 225, 225);
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.onsale {
+    background-color: rgb(9, 123, 23);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.offsale {
+    background-color: rgb(220, 23, 23);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.rescheduled {
+    background-color: rgb(230, 156, 30);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.canceled {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.postponed {
+    background-color: rgb(230, 156, 30);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+#venueName {
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#venueAddressBlock {
+    font-size: 22px;
+    width: 49%;
+    float: left;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgb(189, 189, 189);
+    margin-bottom: 15px;
+}
+
+#moreEvents {
+    font-size: 22px;
+    width: 49%;
+    float: right;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(100, 203, 255);
+}
+
+#venueDetailsInner {
+    margin: 7px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    overflow: hidden;
+}
+
+#mapsLink {
+    text-decoration: none;
+    color: rgb(100, 203, 255);
+}
+
+.allNames {
+    cursor: pointer;
 }
