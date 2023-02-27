@@ -33,8 +33,9 @@ var allNames;
 
 var data;
 
-const url = "http://eventssearch-env.eba-zsuwgjue.us-east-2.elasticbeanstalk.com/";
+//const url = "http://eventssearch-env.eba-zsuwgjue.us-east-2.elasticbeanstalk.com/";
 //const url = "http://127.0.0.1:5000/";
+const url = "https://homework6-378218.ue.r.appspot.com/";
 
 
 // function sortEvent(){

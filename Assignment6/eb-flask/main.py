@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, Response
 import requests
 import json
 
-# server url -- http://eventssearch-env.eba-zsuwgjue.us-east-2.elasticbeanstalk.com/
 # ticketmaster api key -- aCWLPVCmdiIXGGhqklGGswfAP32Knqsu
 # ipinfo api key -- d7637bfe3b1b96
 # google api key -- AIzaSyBA3i9a3LPKXS06qtgdPUxHnOFXDxA0Ssg
